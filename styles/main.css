@@ -140,6 +140,24 @@
 }
 
 
+/* our sponsor section style*/
+.our-sponsor{
+    align-items: center;
+    text-align: center;
+}
+.our-sponsor-content{
+    max-width: 500px;
+}
+.our-sponsor-items{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.sponsor-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* responsive media query*/
 @media only screen and (max-width: 767px) {
