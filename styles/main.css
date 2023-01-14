@@ -11,6 +11,9 @@
   .text-primary{
     color: var(--primary-color);
   }
+  img{
+    width: 100%;
+  }
   body{
     background-color: #fff;
     font-family: 'Work Sans', sans-serif;
@@ -54,7 +57,7 @@
     padding: 10px 100px 10px 100px;
 }
 .banner-image img{
-    width: 100%;
+    /* width: 100%; */
     border-radius: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -74,11 +77,14 @@
     padding: 10px 240px 0px 240px; 
 }
 
+.main section{
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
 /* feature sections styles*/
 .feature{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px;
 }
 .feature-images{
     display: grid;
@@ -89,7 +95,7 @@
 } 
 .image-div img{
     border-radius: 8px;
-    width: 100%;    
+    /* width: 100%;     */
 }
 .feature-content{
     display: grid;
@@ -103,6 +109,35 @@
     font-size: larger;
 }
 
+/* section loving features and its items styles*/
+.loving-features{
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+}
+.loving-features-header{
+    padding-right: 10px;
+}
+.loving-features-header h1{
+    border-left: 3px solid var(--primary-color);
+    padding-left: 8px;
+}
+.loving-features-items{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.loving-feature-image-div{
+    position: relative;
+}
+.experience-div{
+    background-color: var(--primary-color);
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+}
 
 
 
@@ -111,7 +146,7 @@
     .header, .main, .banner-content {
         padding: 10px;
     }
-    .navigation, .feature, .feature-images{
+    .navigation, .feature, .feature-images, .loving-features{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
