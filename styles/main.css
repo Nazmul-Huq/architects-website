@@ -113,6 +113,7 @@
 .loving-features{
     display: grid;
     grid-template-columns: 1fr 1.25fr;
+    
 }
 .loving-features-header{
     padding-right: 10px;
@@ -125,6 +126,22 @@
     padding-left: 15px;
     padding-right: 10px;
 }
+.loving-feature-item{
+    background-image: linear-gradient(to bottom, rgba(124, 115, 104, 0.102), #eeeae51a);
+}
+.loving-feature-item p{
+    display: -webkit-box;
+    max-width: 350px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.loving-feature-item p:hover{
+    overflow: visible;
+    white-space: normal;
+    -webkit-line-clamp: 6;
+}
 .loving-feature-image-div{
     position: relative;
 }
@@ -136,7 +153,8 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    padding: 10px;
+    padding: 30px;
+    border-radius: 5px;
 }
 
 /*fact section style*/
@@ -161,8 +179,18 @@
     justify-items: center;
     padding: 20px 10px;
 }
+.fact-item:hover{
+    border-radius: 50%;
+    width: 150px;
+    transition: width 2s;
+    background-color: rgba(255, 144, 14, 0.2);
+    transition-timing-function: ease-in;
+}
 .fact-image{
     max-width: 15px;
+}
+.fact-number{
+    font-weight: 900;
 }
 
 /* our sponsor section style*/
@@ -185,6 +213,38 @@
 .sponsor-item{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+/* form related styles*/
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+.contact-us-form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr, );
+    background-color: #f9f4f4;
+    padding: 20px;
+    width: 70%;
+}
+.contact-us-form label{
+    padding: 5px 0px;
+}
+input[type=text], [type=tel], [type=email], [type=textarea]{
+    padding: 10px 0px 10px 5px;
+}
+input[type=text], [type=tel], [type=email], [type=textarea], select{
+    border: 1px solid #ccc;
+    padding: 10px 0px 10px 5px;
+}
+.contact-us-form button{
+    margin-top: 20px;
+}
+.contact-us-form button:hover{
+    background-color: #e39a46;
+    border: 2px solid #624a2f;
 }
 
 /* footer styles*/
@@ -214,6 +274,10 @@
       }
 
     /*remove margin from feature section>> content*/
+    .feature{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .feature-content{
         margin-left: 0px;
     }
@@ -232,6 +296,10 @@
         padding-bottom: 20px;
     }
 
+    .contact-us-form{
+        padding: 10px;
+        width: 100%;
+    }
     .footer{
         margin: 10px;
     }
