@@ -142,7 +142,10 @@
 
 /* our sponsor section style*/
 .our-sponsor{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    justify-items: center;
     text-align: center;
 }
 .our-sponsor-content{
@@ -150,9 +153,7 @@
 }
 .our-sponsor-items{
     display: flex;
-    justify-content: space-between;
-    
-   
+    justify-content: space-between;   
 }
 .sponsor-item{
     padding-left: 20px;
@@ -179,5 +180,14 @@
         margin-left: 0px;
     }
 
-    
+    /*sponsor section responsive style*/
+    .our-sponsor-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-item{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
   }
