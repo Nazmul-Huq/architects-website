@@ -263,15 +263,23 @@ input[type=text], [type=tel], [type=email], [type=textarea], select{
     .header, .main, .banner-content {
         padding: 10px;
     }
-    .navigation, .feature, .feature-images, .loving-features{
+        /*make the explore button full width*/
+        .explore-more-button{
+            width: 100%;
+          }
+
+    .navigation, .feature-images, .loving-features{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
 
-    /*make the explore button full width*/
-    .explore-more-button{
-        width: 100%;
-      }
+    .feature{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
 
     /*remove margin from feature section>> content*/
     .feature{
