@@ -78,8 +78,8 @@
 }
 
 .main section{
-    margin-top: 20px;
-    /* margin-bottom: 20px; */
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 /* feature sections styles*/
 .feature{
@@ -139,6 +139,31 @@
     padding: 10px;
 }
 
+/*fact section style*/
+.some-facts-content{
+    padding-bottom: 30px;
+}
+.some-facts-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 10px;
+}
+.fact-item {
+    width: 125px;
+    height: 100px;
+    display: grid;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px 10px;
+}
+.fact-image{
+    max-width: 15px;
+}
 
 /* our sponsor section style*/
 .our-sponsor{
@@ -152,8 +177,10 @@
     max-width: 500px;
 }
 .our-sponsor-items{
-    display: flex;
-    justify-content: space-between;   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;  
+    gap: 10px; 
 }
 .sponsor-item{
     padding-left: 20px;
@@ -180,9 +207,13 @@
         margin-left: 0px;
     }
 
+    /* fact section*/
+    .some-facts-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /*sponsor section responsive style*/
     .our-sponsor-items{
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
     .sponsor-item{
